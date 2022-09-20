@@ -8,6 +8,7 @@ services:
             - SE_EVENT_BUS_HOST=selenium-hub
             - SE_EVENT_BUS_PUBLISH_PORT=4442
             - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+            - JAVA_OPTS=-Dwebdriver.chrome.whitelistedIps=
         deploy:
             replicas: 4
         entrypoint: bash -c 'SE_OPTS="--host $$HOSTNAME" /opt/bin/entry_point.sh'
@@ -33,6 +34,7 @@ services:
         deploy:
             replicas: 4
         entrypoint: bash -c 'SE_OPTS="--host $$HOSTNAME" /opt/bin/entry_point.sh'
+        
 
     selenium-hub:
         image: selenium/hub:4.1.1-20220121

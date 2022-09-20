@@ -25,5 +25,15 @@ For easiest way to getting started, extract this project and open it from Intell
 
 Tip: Do remember to update this readme file for anything else that you think needs updating here!
 
-## Success
+- Running locally using maven
+1. use command mvn clean test
 
+- Running locally using junit-platform-console-standalone
+1. Open configure buildPath for your project.
+2. Select classPath option and then select Add Library.
+3. Select Junit add as library to your project select Junit 5 jar.
+4. Add annotation @RunWith(JUnitPlatform.class)
+5. Import as suggested on adding the above RunWith command
+6. RIght click on test and run.
+
+## Success
