@@ -28,7 +28,7 @@ Tip: Do remember to update this readme file for anything else that you think nee
 - Running locally using maven
 1. use command mvn clean test
 
-- Running locally using junit-platform-console-standalone
+- Running locally using junit 5
 1. Open configure buildPath for your project.
 2. Select classPath option and then select Add Library.
 3. Select Junit add as library to your project select Junit 5 jar.
